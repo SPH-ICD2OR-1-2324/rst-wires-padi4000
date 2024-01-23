@@ -200,6 +200,8 @@ function _3wire () {
         game.splash("Cut the last wire")
     } else if (bluecount > 1) {
         game.splash("cut the last blue wire")
+    } else {
+        game.splash("cut the last wire")
     }
 }
 let whitecount = 0
