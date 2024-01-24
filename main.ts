@@ -23,12 +23,12 @@ function _5wire () {
             blackcount += 1
         }
     }
-    if (redcount == 1 && yellowCount == 1) {
+    if (WireList[4] == 4 && SerialNumber % 2 == 1) {
+        game.splash("cut the fourth wire")
+    } else if (redcount == 1 && yellowCount == 1) {
         game.splash("cut the first wire")
     } else if (blackcount == 0) {
         game.splash("cut the second wire")
-    } else if (WireList[4] == 4 && SerialNumber % 2 == 1) {
-        game.splash("cut the fourth wire")
     } else {
         game.splash("cut the first wire")
     }
